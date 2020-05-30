@@ -1,10 +1,10 @@
-  class Stack
+  class Stack               # LECTURE NOTES
     def initialize
-      @stack = []
+      @stack = []            # <= confusing: don't use same name as class
     end
 
     def push(el)
-      @stack.push(el)
+      @stack.push(el) 
     end
 
     def pop
@@ -14,6 +14,15 @@
     def peek
       @stack.last
     end
+
+    # def inspect             <= mine lacking these. limit amount of info this returns
+    # def length                    find out how many stacks
+    # def empty?                    find out if empty
+
+    # private
+    # attr_reader :stack      <= mine lacking this. important to keep user from
+    #                             accessing this.
+
   end
 
   # stack = Stack.new
@@ -31,23 +40,36 @@
   # stack.peek
   # p stack
 
-  class Queue
+  class Queue                       # <= Ruby has built-in Queue class, should
+                                    #       use different name
 
     def initialize
-      @queue = []
+      @queue = []                   # <= confusing: don't use same name as class
     end
 
     def enqueue(el)
-      @queue.unshift(el)
+      @queue.push(el)
     end
 
     def dequeue
-      @queue.pop
+      @queue.shift
     end
 
     def peek
-      @queue.last
+      @queue.first
     end
+
+
+    # def inspect             <= mine lacking these. limit amount of info this returns
+    # def length                    find out how many elements in queue
+    # def empty?                    find out if queue empty
+    # def show                      see whole queue
+    # def dup                       keep user from modifying
+
+    # private
+    # attr_reader :stack      <= mine lacking this. important to keep user from
+    #                             accessing this.
+    
 
   end
 
@@ -128,3 +150,15 @@
   # p map.delete("app")
   # p map.show
   # p map
+
+  # =====================
+  # LECTURE NOTES
+
+  # require_relative "queue"
+  # class Node
+  #   attr_reader :value :children            <= public needs access
+  #   def initialize(value, children = [])
+  #     @value = value
+  #     @children = children
+  #  end
+  # end
