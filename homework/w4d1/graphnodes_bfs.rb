@@ -1,5 +1,7 @@
 # Not really focusing very well on this homework with the assessment tomorrow
 # Plus, I don't really understand Sets, nor how to structure the bfs
+require "byebug"
+require "set"
 
 class GraphNode
 
@@ -16,6 +18,29 @@ class GraphNode
 
 end
 
+def bfs(starting_node, target_value)
+    searched = Set.new()
+    queue = [starting_node]
+
+    # need loop. while? helper method ? _bfs?
+    while !queue.empty?
+        # debugger
+        test_node = queue.shift
+        if !searched.include?(test_node)
+            return test_node if test_node.value == target_value
+            # debugger
+            queue += test_node.neighbors
+            searched.add(test_node)
+        end
+    end
+    nil
+end
+
+# def _bfs(node, target_value)
+
+# end
+
+
 a = GraphNode.new('a')
 b = GraphNode.new('b')
 c = GraphNode.new('c')
@@ -27,17 +52,6 @@ c.neighbors = [b, d]
 e.neighbors = [a]
 f.neighbors = [e]
 
-def bfs(starting_node, target_value)
-    visited = Set.new()
-    queue = [starting_node]
-    return queue.first if queue.first.value == target value
-    queue.push(queue.first.neighbors)
-    visited.add(starting_node.value)
+p bfs(a, "b")
 
-
-
-end
-
-def _bfs(node, target_value)
-
-end
+p bfs(a, "f")
