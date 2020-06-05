@@ -1,0 +1,104 @@
+
+header body footer {
+
+    background-color:lightsalmon;
+    
+
+}
+
+
+body {
+
+    font-family:sans-serif;
+}
+
+
+h1 {
+
+    font-size: 38px;
+}
+
+
+h2 {
+
+    font-size: 32px;
+}
+
+
+.ingredients-list {
+
+    list-style: square, inside;
+
+}
+
+
+ol {
+
+    list-style: bengali;
+
+}
+
+
+header > img {
+
+    width: 100px;
+
+}
+
+
+a {
+
+    text-decoration: none;
+    color: brown;
+
+}
+
+
+ul > li > a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+.review {
+
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    /* background-color: rosybrown; */
+}
+
+
+
+input {
+
+    background-color:brown;
+    color:white
+
+}
+
+
+
+textarea {
+  
+    width: 400px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing:border-box;
+    border: 5px solid, black;
+    background-color: brown;
+    color: white;
+    
+}
+
+
+
+input[type=button], input[type=submit] {
+    
+    border-radius: 10px;
+    border: 1x ;
+    width: 
+    
+}
