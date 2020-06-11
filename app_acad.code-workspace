@@ -7,5 +7,7 @@
 			"path": "../../Google Drive/Matthew/Documents/Work/Other Work/Coding/App Academy/may_cohort"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.tabSize": 2
+	}
 }
