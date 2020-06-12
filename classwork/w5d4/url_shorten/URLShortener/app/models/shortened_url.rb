@@ -18,10 +18,3 @@ class ShortenedUrl < ApplicationRecord
 end
 
 
-# INSERT INTO
-#   users (fname, lname)
-# VALUES
-#   ("Ned", "Ruggeri"), ("Kush", "Patel"), ("Earl", "Cat");
-
-
-# a =  ShortenedUrl.create!('./adfads', ShortenedUrl.random_code, 5)
