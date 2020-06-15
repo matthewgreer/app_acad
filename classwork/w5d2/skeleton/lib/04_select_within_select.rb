@@ -35,19 +35,6 @@ end
 def larger_than_russia
   # List each country name where the population is larger than 'Russia'.
   execute(<<-SQL)
-  SELECT
-    countries.name
-  FROM
-    countries
-  WHERE
-    countries.population > (
-      SELECT
-      countries.population
-      FROM
-      countries
-      WHERE
-        countries.name = 'Russia'
-    )
   SQL
 end
 
@@ -55,19 +42,6 @@ def richer_than_england
   # Show the countries in Europe with a per capita GDP greater than
   # 'United Kingdom'.
   execute(<<-SQL)
-  SELECT
-    countries.name 
-  FROM
-    countries
-  WHERE
-    countries.continent = 'Europe' AND countries.gdp / countries.population > (
-      SELECT
-        countries.gdp / countries.population
-      FROM
-        countries
-      WHERE 
-        countries.name = 'United Kingdom'
-    )
   SQL
 end
 
@@ -75,19 +49,6 @@ def neighbors_of_certain_b_countries
   # List the name and continent of countries in the continents containing
   # 'Belize', 'Belgium'.
   execute(<<-SQL)
-  SELECT
-    countries.name, countries.continent
-  FROM
-    countries
-  WHERE
-    countries.continent IN (
-      SELECT
-        countries.continent
-      FROM
-        countries
-      WHERE
-        countries.name = 'Belize' OR countries.name = 'Belgium'
-    )
   SQL
 end
 
@@ -95,24 +56,6 @@ def population_constraint
   # Which country has a population that is more than Canada but less than
   # Poland? Show the name and the population.
   execute(<<-SQL)
-  SELECT
-    countries.name, countries.population
-  FROM
-    countries
-  WHERE
-    countries.population > (
-      SELECT
-        countries.population
-      FROM
-        countries
-      WHERE
-        countries.name = 'Canada') AND countries.population < (
-          SELECT
-            countries.population
-          FROM
-            countries
-          WHERE
-           countries.name = 'Poland')
   SQL
 end
 
@@ -122,18 +65,5 @@ def sparse_continents
   # population.
   # Hint: Sometimes rewording the problem can help you see the solution.
   execute(<<-SQL)
-    SELECT
-      countries_1.name, countries_1.continent, countries_1.population
-    FROM
-      countries AS countries_1
-    WHERE
-      countries_1.continent NOT IN (
-        SELECT
-          countries_2.continent
-        FROM
-          countries AS countries_2
-        WHERE
-          countries_2.population > 25000000
-      )
   SQL
 end
