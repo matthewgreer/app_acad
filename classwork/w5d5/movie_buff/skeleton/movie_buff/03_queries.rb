@@ -1,6 +1,13 @@
 def what_was_that_one_with(those_actors)
   # Find the movies starring all `those_actors` (an array of actor names).
   # Show each movie's title and id.
+  
+  query = those_actors.join("' AND actors.name = '")
+
+  Movie
+    .select(:title, :id)
+    .joins(:actors)
+    .where("actors.name = '#{query}'")
 
 end
 
@@ -18,7 +25,10 @@ end
 
 def actor_out_of_work
   # Find the number of actors in the database who have not appeared in a movie
-
+  Casting
+    .select('COUNT(*)')
+    .group('castings.actor_id')
+    .where('castings.movie_id IS NULL')
 end
 
 def starring(whazzername)
@@ -28,6 +38,12 @@ def starring(whazzername)
 
   # ex. "Sylvester Stallone" is like "sylvester" and "lester stone" but
   # not like "stallone sylvester" or "zylvester ztallone"
+
+  query = "%" + whazzername.split("").join("%") + "%"
+
+  Movie
+    .joins(:actors)
+    .where('actors.name ILIKE ?', query)
 
 end
 
