@@ -1,0 +1,9 @@
+<h2>Cats</h2>
+
+<ul>
+  <% @cats.each do |cat| %>
+    <li><%= cat.id %>.   <%= cat.name %>, <%= cat.age %> year old <%= cat.coat_color %> <%= cat.sex == "m" ? "male" : "female" %>. <strong>Bio: </strong> <%= cat.biography %></li><br>
+  <% end %>
+</ul>
+
+<a href="<%= new_cat_url %>">Create new cat!</a>
