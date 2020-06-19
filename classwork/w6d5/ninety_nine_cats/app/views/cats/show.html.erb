@@ -1,0 +1,21 @@
+<h1><%= @cat.name %></h1>
+
+<table> 
+    <tr>
+        <td>AGE</td>
+        <td>BIRTHDAY</td>
+        <td>SEX</td>
+        <td>COLOR</td>
+        <td>DESCRIPTION</td>
+    </tr>
+
+    <tr>
+        <td><%= @cat.age %></td>
+        <td><%= @cat.birth_date %></td>
+        <td><%= @cat.sex %></td>
+        <td><%= @cat.color %></td>
+        <td><%= @cat.description %></td>
+    </tr>
+</table>
+
+<p><a href="<%= cats_url %>">Back to all cats</a></p>
