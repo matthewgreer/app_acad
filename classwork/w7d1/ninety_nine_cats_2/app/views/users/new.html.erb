@@ -1,0 +1,7 @@
+<h1>Create new account</h1>
+<form action="<%= users_url %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="text" name="user[user_name]" placeholder="User Name">
+  <input type="password" name="user[password]" placeholder="Password">
+  <input type="submit" value="Sign Up">
+</form>
