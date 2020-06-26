@@ -1,0 +1,31 @@
+// Use the gear_dropdown.png screenshot as a style guide
+#gear-dropdown-btn {
+    position:relative;
+}
+#gear-dropdown {
+    position: absolute;
+    // display: flex;
+    // flex-direction: column;
+    background-color: white;
+    border: 1px solid $light-gray;
+    border-radius: 3px;
+    font-family: $sans-serif;
+    color: $dark-gray;
+    width: 245px;
+    height: 260px;
+    z-index: 100;
+    right: 7px;
+    top: 29px;
+    // margin: 10px;
+  }
+
+  // .dropdown-subtitle {
+  //   margin: 10px;
+  //   padding: 7px;
+  // }
+
+  .editions, .help {
+    text-decoration: none;
+    margin: 10px;
+    padding: 7px;
+  }

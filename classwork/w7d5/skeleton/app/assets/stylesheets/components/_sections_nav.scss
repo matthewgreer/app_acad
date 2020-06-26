@@ -1,0 +1,35 @@
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sections-nav {
+    position: absolute;
+    top: 11px;
+}
+
+.sections-nav ul {
+    display: flex;
+    // justify-content: space-around;
+    
+}
+.sections-nav ul li {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 1px;
+    
+    font-size: 12px;
+    font-family: $sans-serif;
+}
+
+.sections-nav ul li:hover {
+
+}
+
+.sections-nav ul li:last-child {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
