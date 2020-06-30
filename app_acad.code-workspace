@@ -9,5 +9,8 @@
 	],
 	"settings": {
 		"editor.tabSize": 2
-	}
+	},
+	"emmet.preferences": {},
+	"emmet.includeLanguages": {},
+	"editor.quickSuggestions": null
 }
