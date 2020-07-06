@@ -8,7 +8,9 @@
 		}
 	],
 	"settings": {
-		"editor.tabSize": 2
+		"editor.tabSize": 2,
+		"liveServer.settings.multiRootWorkspaceName": "app_acad",
+		"pomodoro.workTime": 15
 	},
 	"emmet.preferences": {},
 	"emmet.includeLanguages": {},
