@@ -5,16 +5,6 @@ function GameView (ctx) {
     this.ctx = ctx;
 }
 
-// GameView.prototype.start = function() {
-//     ourGame = this.game;
-//     ourCtx = this.ctx;
-//     function moveAndDraw() {
-//         ourGame.moveObjects();
-//         ourGame.draw(ourCtx);
-//     }
-//     setInterval(moveAndDraw(), 1000);
-// }
-
 GameView.prototype.start = function () {
     ourGame = this.game;
     ourCtx = this.ctx;

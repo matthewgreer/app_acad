@@ -8,10 +8,10 @@ window.Asteroid = Asteroid;
 window.Game = Game;
 
 document.addEventListener('DOMContentLoaded', () => {
-    const canvasEl = document.getElementById('game-canvas'); // need to grab element from DOM
+    const canvasEl = document.getElementById('game-canvas');
     canvasEl.height = 500;
     canvasEl.width = 500;
-    const ctx = canvasEl.getContext('2d'); // need to get ctx from canvasEl
+    const ctx = canvasEl.getContext('2d');
     ctx.fillRect(0, 0, 500, 500)
     window.ctx = ctx;
 
