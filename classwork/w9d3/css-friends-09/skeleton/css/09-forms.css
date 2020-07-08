@@ -1,0 +1,23 @@
+/* PHASE 9: Forms */
+.content-main {
+    display: flex;
+}
+
+.input input {
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border-radius: 5px;
+}
+
+.submit > input {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    background: #0c0;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 #070;
+}
