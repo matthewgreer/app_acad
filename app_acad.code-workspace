@@ -9,7 +9,7 @@
 	],
 	"settings": {
 		"editor.tabSize": 2,
-		"liveServer.settings.multiRootWorkspaceName": "app_acad",
+		"liveServer.settings.multiRootWorkspaceName": "may_cohort",
 		"pomodoro.workTime": 15,
 		"git.ignoreLimitWarning": true
 	},
