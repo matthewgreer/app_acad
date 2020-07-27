@@ -1,0 +1,25 @@
+<% if edit %>
+  <% form_heading = "Edit a Laugh" %>
+  <% action = laugh_url(laugh) %>
+<% else %>
+  <% form_heading = "Create a Laugh" %>
+  <% action = laughs_url %>
+<% end %>
+
+<h1><%= form_heading %></h1>
+<form action="<%= action %>" method="POST">
+  <% if edit %>
+  <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="laugh_body">Body</label>
+  <input id="laugh_body" 
+    type="text" 
+    name="laugh[body]" 
+    value="<%= laugh.body %>"
+  >
+  <br />
+  <br />
+  <input type="submit" value="<%= form_heading %>">
+</form>

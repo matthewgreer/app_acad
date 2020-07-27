@@ -1,0 +1,20 @@
+<h1>Hello world!</h1>
+<h3>Printing ERB tags!</h3>
+<%= 3+2 %> <%# <-- printing erb tag %>
+
+<% debugger %>
+
+<h3>Non-printing ERB tags</h3>
+<ul>
+  <% ["hello", "friends"].each do |word| %> <%# non-printing - logic erb  %>
+    <li><%= word %></li> <%# this is printing  %>
+  <% end %> <%# non-printing  %>
+</ul>
+
+<p>
+    We want to use printing ERB tags for what we want to appear on the page
+    and non-printing for ruby logic 
+</p>
+
+
+

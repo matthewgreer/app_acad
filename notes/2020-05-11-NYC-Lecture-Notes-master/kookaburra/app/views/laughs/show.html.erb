@@ -1,0 +1,16 @@
+<%# link to back to the index page %>
+<a href="<%= laughs_url %>">Back to index</a>
+
+<h1>Our Single Laugh</h1>
+<div>
+  <%= @laugh.body %> - <%= @laugh.author.username %>
+</div>
+
+<%# link to the edit page%>
+<a href="<%= edit_laugh_url(@laugh) %>">Edit Laugh</a>
+<%# delete laugh button%>
+<form action="<%= laugh_url(@laugh) %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" value="Delete this Laugh :(">
+</form>

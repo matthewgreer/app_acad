@@ -1,0 +1,15 @@
+<h1>All the Laughs</h1>
+<ul>
+<% @laughs.each do |laugh| %>
+  <li>
+    <a href="<%= laugh_url(laugh) %>">
+      <%= laugh.body %>
+    </a> - <%= laugh.author.username %>
+  </li>
+  <%# debugger %>
+  <!--a href="<%= laugh_url(laugh) %>">link to show</a-->
+<% end %>
+</ul>
+
+<%# link to a new form%>
+<a href="<%= new_laugh_url %>">Create a Laugh</a>

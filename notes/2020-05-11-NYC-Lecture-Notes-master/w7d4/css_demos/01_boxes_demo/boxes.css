@@ -1,0 +1,107 @@
+body, h1, article {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  background-color: aliceblue;
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+a {
+  background-color: darksalmon;
+}
+
+span {
+  
+}
+
+/* wildcard selector. Will be overwritten by all other selectors */
+* {
+
+}
+
+/* class selector */
+.my-class {
+
+}
+
+/* multi-class selector */
+.my-class.my-other-class {
+
+}
+
+/* selects only h1 elements with class 'my-class'. 
+   More specific than just class selector */
+h1.my-class {
+
+}
+
+/* id selectors */
+#my-id {
+
+}
+
+h1#my-id {
+
+}
+
+/* 
+Note: we should keep id's unique to a single element in our document
+Use .class to target multiple elements
+*/
+
+/* 
+Selects h1 element that has a class of 'my-class' and id of 'my-id' 
+more specific than just an id selector
+*/
+h1.my-class#my-id {
+
+}
+
+/* Selecting using data attribute */
+h1[data-something='some-value'] {
+
+}
+
+/* 
+ANCESTRY SELECTORS 
+Selecting elements that are children of another element
+*/
+
+/* Selects all span tags that are children of a div */
+div span {
+
+}
+
+/* Selects only span tags that are direct children of an article  */
+article > span {
+
+}
+
+/* selects a div that is being hovered over  */
+div:hover {
+
+}
+
+/* selects first child element of a div  */
+div:first-child {
+
+}
+
+/* 
+pseudo-element selector. 
+Acts as if you added a whole new HTML element into the document 
+*/
+div::after {
+
+}
+
+/* Specificity rules 
+1) The highest score take precedence
+2) If the scores are the same, the last defined tag overwrites  */
+

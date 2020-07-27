@@ -1,0 +1,41 @@
+.DS_Store
+**/.byebug_history
+
+/kookaburra/tmp/*
+*/gifomatic/tmp/*
+
+/kookaburra/assets/javascripts/bundle.js
+*/gifomatic/assets/javascripts/bundle.js
+/kookaburra/assets/javascripts/bundle.js.map
+*/gifomatic/assets/javascripts/bundle.js.map
+
+# Ignore all logfiles and tempfiles.
+/kookaburra/log/*
+*/gifomatic/log/*
+/kookaburra/tmp/*
+*/gifomatic/tmp/*
+!/kookaburra/log/.keep
+*!/gifomatic/log/.keep
+!/kookaburra/tmp/.keep
+*!/gifomatic/tmp/.keep
+/w7d4/kookaburra/log/*
+*/w7d4/gifomatic/log/*
+/w7d4/kookaburra/tmp/*
+*/w7d4/gifomatic/tmp/*
+
+# Ignore uploaded files in development
+/kookaburra/storage/*
+*/gifomatic/storage/*
+!/kookaburra/storage/.keep
+*!/gifomatic/storage/.keep
+
+/node_modules
+/yarn-error.log
+
+/kookaburra/public/assets
+*/gifomatic/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/kookaburra/config/master.key
+*/gifomatic/config/master.key

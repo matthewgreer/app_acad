@@ -1,0 +1,16 @@
+<!--h1>Edit Laugh</h1>
+<form action="<%= laugh_url(@laugh) %>" method="POST">
+  <%# hidden input field to defined other verbs besides get and post%>
+  <%# because our form element only accepts get or post as values for method attribute%>
+  <input type="hidden" name="_method" value="PATCH">
+
+  <label for="laugh_body">Body</label>
+  <input id="laugh_body" type="text" name="laugh[body]" value="<%= @laugh.body %>">
+
+  <label for="author_id">Author ID</label>
+  <input id="author_id" type="text" name="laugh[author_id]" value="<%= @laugh.author_id %>">
+  <br />
+  <input type="submit" value="Edit Laugh">
+</form-->
+
+<%= render 'form', edit: true, laugh: @laugh %>

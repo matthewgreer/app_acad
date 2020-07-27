@@ -1,0 +1,47 @@
+.app {
+  text-align: center;
+}
+
+.clear-button {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+}
+
+.inventory {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.list {
+  min-height: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.cart {
+  margin: 0 auto;
+  width: 50%;
+  min-height: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.add-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inventory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 75%;
+  font-size: 40px;
+}
+
+.cart li {
+  font-size: 20px;
+}

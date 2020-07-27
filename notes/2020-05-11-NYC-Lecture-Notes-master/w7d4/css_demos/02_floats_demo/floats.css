@@ -1,0 +1,46 @@
+body {
+  background-color: #2e2b26;
+}
+
+section {
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+.manhattan {
+  background-color: gold;
+}
+
+.brooklyn {
+  background-color: cadetblue;
+}
+
+.app-academy {
+  background-color: whitesmoke;
+}
+
+.sf {
+  background-color: firebrick;
+}
+
+span {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix::after {
+  display: block;
+  content: 'pseudo-element';
+  clear: both;
+}

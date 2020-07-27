@@ -1,0 +1,17 @@
+li {
+  list-style: none;
+  margin: 5px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gif-index {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

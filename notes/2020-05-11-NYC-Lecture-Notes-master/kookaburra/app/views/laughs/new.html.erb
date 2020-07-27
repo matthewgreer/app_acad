@@ -1,0 +1,17 @@
+<!--h1>New Laugh</h1>
+<form action="<%= laughs_url %>" method="POST">
+<%# default value for method attribute is 'POST'%>
+  <label for="laugh_body">Body</label>
+  <input id="laugh_body" type="text" name="laugh[body]">
+  
+  <%# another way to associate label with input field%>
+  <label>Text input
+    <input type="text">
+  </label>
+
+  <br />
+  <input type="submit" value="Create New Laugh">
+</form-->
+
+<%# refactoring with using partial%>
+<%= render 'form', edit: false, laugh: @laugh %>

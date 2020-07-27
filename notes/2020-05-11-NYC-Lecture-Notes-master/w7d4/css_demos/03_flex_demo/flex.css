@@ -1,0 +1,24 @@
+body {
+  background-color: #2e2b26;
+}
+
+section {
+  height: 300px;
+  width: 300px;
+}
+
+.manhattan {
+  background-color: gold;
+}
+
+.brooklyn {
+  background-color: cadetblue;
+}
+
+.app-academy {
+  background-color: whitesmoke;
+}
+
+.sf {
+  background-color: firebrick;
+}
